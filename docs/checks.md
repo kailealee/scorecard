@@ -468,6 +468,8 @@ issue](https://github.com/ossf/scorecard/issues/new/choose).
 - If hosted on GitHub, use a GitHub action to release your package to language-specific hubs.
 
 ## Pinned-Dependencies 
+ 
+Covers the languages: python, go, chocolate, npm, etc...
 
 Risk: `Medium` (possible compromised dependencies)
 
@@ -506,7 +508,6 @@ this risk by:
 
 For projects hosted on GitHub, you can learn more about
 dependencies using the [GitHub dependency graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph).
- 
 
 **Remediation steps**
 - If your project is producing an application, declare all your dependencies with specific versions in your package format file (e.g. `package.json` for npm, `requirements.txt` for python, `packages.config` for nuget). For C/C++, check in the code from a trusted source and add a `README` on the specific version used (and the archive SHA hashes).
